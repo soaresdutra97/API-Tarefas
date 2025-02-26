@@ -1,6 +1,6 @@
-package com.developer.tarefas_api.adapters.mapper;
+package com.developer.tarefas_api.adapters.mapper.task;
 
-import com.developer.tarefas_api.adapters.in.dto.request.TaskRequestDTO;
+import com.developer.tarefas_api.adapters.in.dto.task.request.TaskRequestDTO;
 import com.developer.tarefas_api.adapters.out.entities.TaskEntity;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingTarget;

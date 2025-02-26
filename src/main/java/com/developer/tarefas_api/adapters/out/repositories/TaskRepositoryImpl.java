@@ -1,10 +1,9 @@
-package com.developer.tarefas_api.adapters.out;
+package com.developer.tarefas_api.adapters.out.repositories;
 
-import com.developer.tarefas_api.adapters.in.dto.request.TaskRequestDTO;
-import com.developer.tarefas_api.adapters.mapper.TaskMapper;
-import com.developer.tarefas_api.adapters.mapper.TaskUpdateMapper;
+import com.developer.tarefas_api.adapters.in.dto.task.request.TaskRequestDTO;
+import com.developer.tarefas_api.adapters.mapper.task.TaskMapper;
+import com.developer.tarefas_api.adapters.mapper.task.TaskUpdateMapper;
 import com.developer.tarefas_api.adapters.out.entities.TaskEntity;
-import com.developer.tarefas_api.adapters.out.repositories.ITaskJpaRepository;
 import com.developer.tarefas_api.application.domain.TaskDomain;
 import com.developer.tarefas_api.application.domain.enums.TaskStatus;
 import com.developer.tarefas_api.ports.out.ITaskRepository;

@@ -1,22 +1,19 @@
 package com.developer.tarefas_api.adapters.in.controller;
 
 import com.developer.tarefas_api.adapters.in.ITaskService;
-import com.developer.tarefas_api.adapters.in.dto.request.TaskRequestDTO;
-import com.developer.tarefas_api.adapters.in.dto.response.TaskResponseDTO;
-import com.developer.tarefas_api.adapters.mapper.TaskMapper;
-import com.developer.tarefas_api.adapters.out.entities.TaskEntity;
+import com.developer.tarefas_api.adapters.in.dto.task.request.TaskRequestDTO;
+import com.developer.tarefas_api.adapters.in.dto.task.response.TaskResponseDTO;
+import com.developer.tarefas_api.adapters.mapper.task.TaskMapper;
 import com.developer.tarefas_api.application.domain.TaskDomain;
 import com.developer.tarefas_api.application.domain.enums.TaskStatus;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 @RestController
