@@ -1,4 +1,4 @@
-package com.developer.tarefas_api.adapters.in.dto.response;
+package com.developer.tarefas_api.adapters.in.dto.task.response;
 
 import com.developer.tarefas_api.application.domain.enums.TaskStatus;
 

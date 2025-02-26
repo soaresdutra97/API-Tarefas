@@ -13,17 +13,17 @@ public class TaskDomain {
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 
-    public TaskDomain() {
-    }
+    private final UserDomain user;
 
-    public TaskDomain(Long id, String title, String description, TaskStatus status, LocalDateTime createdAt,
-                      LocalDateTime updatedAt) {
-        this.id = id;
-        this.title = title;
-        this.description = description;
-        this.status = status;
-        this.createdAt = createdAt;
+
+    public TaskDomain(UserDomain user, LocalDateTime updatedAt, LocalDateTime createdAt, TaskStatus status, String description, String title, Long id) {
+        this.user = user;
         this.updatedAt = updatedAt;
+        this.createdAt = createdAt;
+        this.status = status;
+        this.description = description;
+        this.title = title;
+        this.id = id;
     }
 
     public Long getId() {
@@ -72,5 +72,9 @@ public class TaskDomain {
 
     public void setUpdatedAt(LocalDateTime updatedAt) {
         this.updatedAt = updatedAt;
+    }
+
+    public UserDomain getUser() {
+        return user;
     }
 }
